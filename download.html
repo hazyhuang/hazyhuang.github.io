@@ -66,7 +66,7 @@
     
         <div class="row">
             <div class="col-xs-12 col-md-8 col-md-offset-2">
-                <div class="section-container-spacer" >
+                <div class="section-container-spacer" value="A" >
                     <div class="text-center">
                         <h1>问题 1</h1>
                     </div>
@@ -84,7 +84,7 @@
                                     <div class="answerContent aw0" data-answer-i="0">
                                         
                                         <div class="answerContentList mgt10">
-                                            <span class="cbox"><input class="answerInpt" id="slec0A" onchange="chooseSubmit(this)" type="radio" name="Q1" value="A"></span>
+                                            <span class="cbox"><input class="answerInpt" id="slec0A" onchange="chooseSubmit(this)" type="radio" name="1" value="A"></span>
                                             <label for="slec0A">
                                                 A.回归 
                                                
@@ -92,7 +92,7 @@
                                         </div>
                                         
                                         <div class="answerContentList mgt10">
-                                            <span class="cbox"><input class="answerInpt" id="slec0B" onchange="chooseSubmit(this)" type="radio" name="Q1" value="B"></span>
+                                            <span class="cbox"><input class="answerInpt" id="slec0B" onchange="chooseSubmit(this)" type="radio" name="1" value="B"></span>
                                             <label for="slec0B">
                                                 B.重新印象 
                                                
@@ -100,7 +100,7 @@
                                         </div>
                                         
                                         <div class="answerContentList mgt10">
-                                            <span class="cbox"><input class="answerInpt" id="slec0C" onchange="chooseSubmit(this)" type="radio" name="Q1" value="C"></span>
+                                            <span class="cbox"><input class="answerInpt" id="slec0C" onchange="chooseSubmit(this)" type="radio" name="1" value="C"></span>
                                             <label for="slec0C">
                                                 C.重构 
                                                
@@ -108,7 +108,7 @@
                                         </div>
                                         
                                         <div class="answerContentList mgt10">
-                                            <span class="cbox"><input class="answerInpt" id="slec0D" onchange="chooseSubmit(this)" type="radio" name="Q1" value="D"></span>
+                                            <span class="cbox"><input class="answerInpt" id="slec0D" onchange="chooseSubmit(this)" type="radio" name="1" value="D"></span>
                                             <label for="slec0D">
                                                 D.反思 
                                                
@@ -121,7 +121,7 @@
                             
                         </div>
                         <button type="button" onclick="lastQuestion(this)" class="btn btn-secondary">上一题</button>
-                        <button type="button" onclick="answer(this)" class="btn btn-primary">答案及解析</button>
+                        <button type="button" onclick="answerQuestion(this)" class="btn btn-primary">答案及解析</button>
                         <button type="button" onclick="nextQuestion(this)" class="btn btn-secondary">下一题</button>
                         <div class="analysisAnswer none" style="display: none;">
 
@@ -152,7 +152,7 @@
                         </div>
                       </div>
 
-                <div class="section-container-spacer" style="display: none;">
+                <div class="section-container-spacer" value="B" style="display: none;">
                     <div class="text-center">
                         <h1>问题 2</h1>
                     </div>
@@ -165,12 +165,12 @@
                                 <!-- 单选题或者判断题 -->
                                 <div class="answerList mgb20">
                                     <div class="answerTitle">
-                                        <small>问题1选项</small>
+                                        <small>问题2选项</small>
                                     </div>
                                     <div class="answerContent aw0" data-answer-i="0">
                                         
                                         <div class="answerContentList mgt10">
-                                            <span class="cbox"><input class="answerInpt" id="slec0A" onchange="chooseSubmit(this)" type="radio" name="Q2" value="A"></span>
+                                            <span class="cbox"><input class="answerInpt" id="slec0A" onchange="chooseSubmit(this)" type="radio" name="2" value="A"></span>
                                             <label for="slec0A">
                                                 A.回归 
                                                
@@ -178,7 +178,7 @@
                                         </div>
                                         
                                         <div class="answerContentList mgt10">
-                                            <span class="cbox"><input class="answerInpt" id="slec0B" onchange="chooseSubmit(this)" type="radio" name="Q2" value="B"></span>
+                                            <span class="cbox"><input class="answerInpt" id="slec0B" onchange="chooseSubmit(this)" type="radio" name="2" value="B"></span>
                                             <label for="slec0B">
                                                 B.重新印象 
                                                
@@ -186,7 +186,7 @@
                                         </div>
                                         
                                         <div class="answerContentList mgt10">
-                                            <span class="cbox"><input class="answerInpt" id="slec0C" onchange="chooseSubmit(this)" type="radio" name="Q2" value="C"></span>
+                                            <span class="cbox"><input class="answerInpt" id="slec0C" onchange="chooseSubmit(this)" type="radio" name="2" value="C"></span>
                                             <label for="slec0C">
                                                 C.重构 
                                                
@@ -194,7 +194,7 @@
                                         </div>
                                         
                                         <div class="answerContentList mgt10">
-                                            <span class="cbox"><input class="answerInpt" id="slec0D" onchange="chooseSubmit(this)" type="radio" name="Q2" value="D"></span>
+                                            <span class="cbox"><input class="answerInpt" id="slec0D" onchange="chooseSubmit(this)" type="radio" name="2" value="D"></span>
                                             <label for="slec0D">
                                                 D.反思 
                                                
@@ -207,7 +207,7 @@
                             
                         </div>
                            <button type="button" onclick="lastQuestion(this)" class="btn btn-secondary">上一题</button>
-                        <button type="button" onclick="answer(this)" class="btn btn-primary">答案及解析</button>
+                        <button type="button" onclick="answerQuestion(this)" class="btn btn-primary">答案及解析</button>
                         <button type="button" onclick="nextQuestion(this)" class="btn btn-secondary">下一题</button>
 
                         <div class="analysisAnswer none"  hidden="true">
@@ -239,7 +239,7 @@
                         </div>
                 </div>
 
-                 <div class="section-container-spacer" hidden="true">
+                 <div class="section-container-spacer" value="C"  hidden="true">
                     <div class="text-center">
                         <h1>问题 3</h1>
                     </div>
@@ -257,7 +257,7 @@
                                     <div class="answerContent aw0" data-answer-i="0">
                                         
                                         <div class="answerContentList mgt10">
-                                            <span class="cbox"><input class="answerInpt" id="slec0A" onchange="chooseSubmit(this)" type="radio" name="Q3" value="A"></span>
+                                            <span class="cbox"><input class="answerInpt" id="slec0A" onchange="chooseSubmit(this)" type="radio" name="3" value="A"></span>
                                             <label for="slec0A">
                                                 A.回归 
                                                
@@ -265,7 +265,7 @@
                                         </div>
                                         
                                         <div class="answerContentList mgt10">
-                                            <span class="cbox"><input class="answerInpt" id="slec0B" onchange="chooseSubmit(this)" type="radio" name="Q3" value="B"></span>
+                                            <span class="cbox"><input class="answerInpt" id="slec0B" onchange="chooseSubmit(this)" type="radio" name="3" value="B"></span>
                                             <label for="slec0B">
                                                 B.重新印象 
                                                
@@ -273,7 +273,7 @@
                                         </div>
                                         
                                         <div class="answerContentList mgt10">
-                                            <span class="cbox"><input class="answerInpt" id="slec0C" onchange="chooseSubmit(this)" type="radio" name="Q3" value="C"></span>
+                                            <span class="cbox"><input class="answerInpt" id="slec0C" onchange="chooseSubmit(this)" type="radio" name="3" value="C"></span>
                                             <label for="slec0C">
                                                 C.重构 
                                                
@@ -281,7 +281,7 @@
                                         </div>
                                         
                                         <div class="answerContentList mgt10">
-                                            <span class="cbox"><input class="answerInpt" id="slec0D" onchange="chooseSubmit(this)" type="radio" name="Q3" value="D"></span>
+                                            <span class="cbox"><input class="answerInpt" id="slec0D" onchange="chooseSubmit(this)" type="radio" name="3" value="D"></span>
                                             <label for="slec0D">
                                                 D.反思 
                                                
@@ -294,7 +294,7 @@
                             
                         </div>
                            <button type="button" onclick="lastQuestion(this)" class="btn btn-secondary">上一题</button>
-                        <button type="button" onclick="answer(this)" class="btn btn-primary">答案及解析</button>
+                        <button type="button" onclick="answerQuestion(this)" class="btn btn-primary">答案及解析</button>
                         <button type="button" onclick="nextQuestion(this)" class="btn btn-secondary">下一题</button>
 
                         <div class="analysisAnswer none"  hidden="true">
@@ -328,23 +328,7 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-md-6 ">
-                <div class="download-card ">
-                    <p>Bibendum enim facilisis gravida <br>neque convallis a cras semper </p>
-                    <br>
-                    <a href="https://itunes.apple.com/fr/genre/mac/" title=""> <img src="./assets/images/app-store-apple.svg" class="img-responsive" alt=""></a>
-                </div>
-            </div>
-            <div class="col-md-6 ">
-                <div class="download-card">
-                    <p>Bibendum enim facilisis gravida <br>neque convallis a cras semper </p>
-                    <br>
-                    <a href="https://play.google.com/store/apps" title=""> <img src="./assets/images/google-play.svg" class="img-responsive" alt=""></a>
-                </div>
-                    
-            </div>
-        </div>
+       
     </div>
 </div>           
 
@@ -354,13 +338,11 @@
         <div class="row">
             <div class="col-xs-12">
 
-                <div class="text-center">
-                    <blockquote>
-                        <p>“Eu augue ut lectus arcu bibendum at varius”
-                            <small class="">Francois Mathieu</small>
-                        </p>
-                    </blockquote>
-                </div>
+                <button type="button" onclick="getResult(this)" class="btn btn-secondary">
+                  查看结果
+                </button>
+
+                <p class="result"></p>
 
                 
 
