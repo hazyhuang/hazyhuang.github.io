@@ -11,401 +11,1095 @@
 
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
-  
+
   <link href="./assets/apple-touch-icon.png" rel="apple-touch-icon">
-    <!--<link href="./assets/favicon.ico" rel="icon">-->
+  <!--<link href="./assets/favicon.ico" rel="icon">-->
 
- 
 
-  <title>练习题</title>  
 
-<link href="./main.a3f694c0.css" rel="stylesheet"></head>
+  <title>练习题</title>
+
+  <link href="./main.a3f694c0.css" rel="stylesheet">
+
+  <link href="./style.css" rel="stylesheet">
+</head>
 
 <body>
 
- <!-- Add your content of header -->
-<header>
-  <nav class="navbar  navbar-fixed-top navbar-default">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle uarr collapsed" data-toggle="collapse" data-target="#navbar-collapse-uarr">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="./index.html" title="">
-          <img src="./assets/images/mashuptemplate.svg" class="navbar-logo-img" alt="">
-        </a>
-      </div>
+  <!-- Add your content of header -->
+  <header>
+    <nav class="navbar  navbar-fixed-top navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle uarr collapsed" data-toggle="collapse"
+            data-target="#navbar-collapse-uarr">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html" title="">
+            <img src="./assets/images/mashuptemplate.svg" class="navbar-logo-img" alt="">
+          </a>
+        </div>
 
-      <div class="collapse navbar-collapse" id="navbar-collapse-uarr">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="./index.html" title="" class="active">首页</a></li>
-          <li><a href="./about.html" title="">华昱博客</a></li>
-          <li><a href="./pricing.html" title="">考试服务</a></li>
-          <li><a href="./contact.html" title="">培训课程</a></li>
-          <li><a href="./components.html" title="">合作伙伴</a></li>
-          <li>
+        <div class="collapse navbar-collapse" id="navbar-collapse-uarr">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="./index.html" title="" class="active">首页</a></li>
+            <li><a href="./about.html" title="">华昱博客</a></li>
+            <li><a href="./contact.html" title="">考试服务</a></li>
+            <li><a href="./contact.html" title="">培训课程</a></li>
+            <li><a href="./contact.html" title="">合作伙伴</a></li>
+            <li>
+              <p>
+                <a href="./download.html" class="btn btn-primary navbar-btn" title="">题库</a>
+              </p>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+
+  <div class="section-container">
+    <div class="container">
+      <button type="button" onclick="getResult(this)" class="btn btn-success">
+        查看结果
+      </button>
+
+      <p class="result"></p>
+
+
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+          <div class="section-container-spacer" value="D">
+            <div class="text-center">
+              <h5>问题 1</h5>
+            </div>
             <p>
-              <a href="./download.html" class="btn btn-primary navbar-btn" title="">模拟试题</a>
+              <p>What is the process called when a person performs a self-assessment to understand how he or she may
+                improve performance?<br>A. Returning<br>B. Reimaging<br>C. Refactoring<br>D.
+                Reflection<br>为了了解自己提高绩效的方式，进行自我评估，这一过程称为<br><br></p>
             </p>
-          </li>
-          
-        </ul>
+            <div class="answerWrap row answerRow" data-answer-length="1">
+              <!-- 多选题或者不定项 -->
+
+              <!-- 单选题或者判断题 -->
+              <div class="answerList mgb20">
+                <div class="answerTitle">
+                  <small>问题1选项</small>
+                </div>
+                <div class="answerContent aw0" data-answer-i="0">
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0A" onchange="chooseSubmit(this)" type="radio"
+                        name="1" value="A"></span>
+                    <label for="slec0A">
+                      A.回归
+
+                    </label>
+                  </div>
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0B" onchange="chooseSubmit(this)" type="radio"
+                        name="1" value="B"></span>
+                    <label for="slec0B">
+                      B.重新印象
+
+                    </label>
+                  </div>
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0C" onchange="chooseSubmit(this)" type="radio"
+                        name="1" value="C"></span>
+                    <label for="slec0C">
+                      C.重构
+
+                    </label>
+                  </div>
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0D" onchange="chooseSubmit(this)" type="radio"
+                        name="1" value="D"></span>
+                    <label for="slec0D">
+                      D.反思
+
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" onclick="lastQuestion(this)" class="btn btn-secondary">上一题</button>
+            <button type="button" onclick="answerQuestion(this)" class="btn btn-primary">答案及解析</button>
+            <button type="button" onclick="nextQuestion(this)" class="btn btn-secondary">下一题</button>
+            <div class="analysisAnswer none" style="display: none;">
+
+              <div class="answerEnd">
+                <span>参考答案：
+
+
+
+                  D&nbsp;
+
+
+
+
+                </span>
+              </div>
+              <div class="shitiDesp pdt15">
+                <div class="shitiTrip">
+                  <span class="icon_index_login_me inline-block icon-anysis"></span>
+                  <span class="shitiLevel">试题解析：</span>
+                </div>
+                <div class="shitiText lh2">
+
+                  <p>
+                    在反思和回顾期间，以持续改进为目标，敏捷团队保留时间对已完成工作进行反思。<br>在此自我评估/团队评估中，包含的内容有：<br>从成功或失误中汲取的教训<br>已执行或失败或未彻底遵循的团队标准<br>其他可改进的地方。
+                  </p>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="section-container-spacer" value="C" style="display: none;">
+            <div class="text-center">
+              <h5>问题 2</h5>
+            </div>
+            <p>
+            <p>During planning for an agile project, a new stakeholder is engaged who proposes changes to the original
+              requirements. What should the agile project manager do to ensure successful project completion?<br>A. Have
+              the team analyze the impact of the changes and update the stakeholders.<br>B. Provide stakeholders with
+              updated reports and conduct daily stand ups.<br>C. Post information radiators in prominent places and
+              regularly send risk burn down charts to the stakeholders.<br>D. Compel stakeholders to attend risk
+              response meetings and conduct daily stand ups to discuss changing priorities and
+              risks.<br>在规划一个敏捷项目期间，一个新的干系人参与，提出变更原始需求。为确保项目成功完成。敏捷项目经理应该怎么做？</p>
+            </p>
+            <div class="answerWrap row answerRow" data-answer-length="1">
+              <!-- 多选题或者不定项 -->
+
+              <!-- 单选题或者判断题 -->
+
+              <div class="answerList mgb20">
+                <div class="answerTitle">
+                  <small>问题2选项</small>
+                </div>
+                <div class="answerContent aw0" data-answer-i="0">
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0A" onchange="chooseSubmit(this)" type="radio"
+                        name="2" value="A"></span>
+                    <label for="slec0A">
+                      A.让团队分析这些变更的影响并缶该干系人更新该信息。
+
+                    </label>
+                  </div>
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0B" onchange="chooseSubmit(this)" type="radio"
+                        name="2" value="B"></span>
+                    <label for="slec0B">
+                      B.向干系人提供更新的报告，并召开每日站会。
+
+                    </label>
+                  </div>
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0C" onchange="chooseSubmit(this)" type="radio"
+                        name="2" value="C"></span>
+                    <label for="slec0C">
+                      C.在显眼的地方发布信息发射源，并定期向该干系人发送风险燃尽图。
+
+                    </label>
+                  </div>
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0D" onchange="chooseSubmit(this)" type="radio"
+                        name="2" value="D"></span>
+                    <label for="slec0D">
+                      D.强迫干系人参加风险应对会议，并召开每日站会，讨论变更优先级和风险。
+
+                    </label>
+                  </div>
+
+                </div>
+              </div>
+
+
+            </div>
+            <button type="button" onclick="lastQuestion(this)" class="btn btn-secondary">上一题</button>
+            <button type="button" onclick="answerQuestion(this)" class="btn btn-primary">答案及解析</button>
+            <button type="button" onclick="nextQuestion(this)" class="btn btn-secondary">下一题</button>
+
+            <div class="analysisAnswer none" style="display: none;">
+
+              <div class="answerEnd">
+                <span>参考答案：
+
+
+
+                  C&nbsp;
+
+
+
+
+                </span>
+              </div>
+              <div class="shitiDesp pdt15">
+                <div class="shitiTrip">
+                  <span class="icon_index_login_me inline-block icon-anysis"></span>
+                  <span class="shitiLevel">试题解析：</span>
+                </div>
+                <div class="shitiText lh2">
+
+                  <p>参考答案C。采用排除法最优选择。选项A中只考虑团队的意见是片面的。选项D中的强迫字眼明显错误。选项B中发送更新的报告不是敏捷推荐的做法。选项C的描述最正确。</p>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="section-container-spacer" value="A" style="display: none;">
+            <div class="text-center">
+              <h5>问题 3</h5>
+            </div>
+            <p>
+              <p>Empathy is a valuable human emotion for generating trust in a team .What types of empathy on an agile
+                project can help build trust ?<br>A.Customer-programmer empathy and programmer-tester
+                empathy<br>B.Customer-stakeholder empathy and customer-product owner empathy<br>C.Stakeholder-customer
+                empathy and customer-programmer empathy<br>D.Customer-product owner empathy and programmer-tester
+                empathy<br>同理心在团队中产生信任是一种有价值的人类情感。敏捷项目中的哪种类型的共鸣能帮助建立信任？<br><br></p>
+            </p>
+
+            <div class="answerWrap row answerRow" data-answer-length="1">
+              <!-- 多选题或者不定项 -->
+
+              <!-- 单选题或者判断题 -->
+
+              <div class="answerList mgb20">
+                <div class="answerTitle">
+                  <small>问题选项</small>
+                </div>
+                <div class="answerContent aw0" data-answer-i="0">
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0A" onchange="chooseSubmit(this)" type="radio"
+                        name="3" value="A"></span>
+                    <label for="slec0A">
+                      A.客户-程序员的共鸣和程序员-测试员的共鸣
+
+                    </label>
+                  </div>
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0B" onchange="chooseSubmit(this)" type="radio"
+                        name="3" value="B"></span>
+                    <label for="slec0B">
+                      B.客户-干系人的共鸣和客户-产品负责人的共鸣
+
+                    </label>
+                  </div>
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0C" onchange="chooseSubmit(this)" type="radio"
+                        name="3" value="C"></span>
+                    <label for="slec0C">
+                      C.干系人-客户的共鸣和客户-程序员的共鸣
+
+                    </label>
+                  </div>
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0D" onchange="chooseSubmit(this)" type="radio"
+                        name="3" value="D"></span>
+                    <label for="slec0D">
+                      D.客户-产品负责人的共鸣和程序员-测试者的共鸣
+
+                    </label>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <button type="button" onclick="lastQuestion(this)" class="btn btn-secondary">上一题</button>
+            <button type="button" onclick="answerQuestion(this)" class="btn btn-primary">答案及解析</button>
+            <button type="button" onclick="nextQuestion(this)" class="btn btn-secondary">下一题</button>
+
+            <div class="analysisAnswer none" style="display: none;">
+
+              <div class="answerEnd">
+                <span>参考答案：
+
+
+
+                  A&nbsp;
+
+
+
+
+                </span>
+              </div>
+              <div class="shitiDesp pdt15">
+                <div class="shitiTrip">
+                  <span class="icon_index_login_me inline-block icon-anysis"></span>
+                  <span class="shitiLevel">试题解析：</span>
+                </div>
+                <div class="shitiText lh2">
+
+                  <p>A 项有利于在一个敏捷项目中增强团队信任。</p>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="section-container-spacer" value="B" style="display: none;">
+            <div class="text-center">
+              <h5>问题 4</h5>
+            </div>
+            <p>
+            <p>What should a scrum master do when an agile team member is behind on their tasks?<br>A. Move the tasks to
+              another team member who has spare capacity in the sprint.<br>B. Ask the team for suggestions.<br>C. Hold a
+              one-on-one meeting to encourage the team member to meet task commitments.<br>D. Inform key
+              stakeholders.<br>一名敏捷团队成员的任务落后时，Scrum主管应该怎么做？<br><br></p>
+            </p>
+            <div class="answerWrap row answerRow" data-answer-length="1">
+              <!-- 多选题或者不定项 -->
+
+              <!-- 单选题或者判断题 -->
+
+              <div class="answerList mgb20">
+                <div class="answerTitle">
+                  <small>问题选项</small>
+                </div>
+                <div class="answerContent aw0" data-answer-i="0">
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0A" onchange="chooseSubmit(this)" type="radio"
+                        name="4" value="A"></span>
+                    <label for="slec0A">
+                      A.将任务移交给在 sprint中有余力的另一名团队成员。
+
+                    </label>
+                  </div>
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0B" onchange="chooseSubmit(this)" type="radio"
+                        name="4" value="B"></span>
+                    <label for="slec0B">
+                      B.让团队提供建议。
+
+                    </label>
+                  </div>
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0C" onchange="chooseSubmit(this)" type="radio"
+                        name="4" value="C"></span>
+                    <label for="slec0C">
+                      C.召开一对一会议，鼓励该团队成员履行任务承诺。
+
+                    </label>
+                  </div>
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0D" onchange="chooseSubmit(this)" type="radio"
+                        name="4" value="D"></span>
+                    <label for="slec0D">
+                      D.通知关键项目干系人。
+
+                    </label>
+                  </div>
+
+                </div>
+              </div>
+
+
+            </div>
+            <button type="button" onclick="lastQuestion(this)" class="btn btn-secondary">上一题</button>
+            <button type="button" onclick="answerQuestion(this)" class="btn btn-primary">答案及解析</button>
+            <button type="button" onclick="nextQuestion(this)" class="btn btn-secondary">下一题</button>
+
+            <div class="analysisAnswer none" style="display: none;">
+
+              <div class="answerEnd">
+                <span>参考答案：
+
+
+
+                  B&nbsp;
+
+
+
+
+                </span>
+              </div>
+              <div class="shitiDesp pdt15">
+                <div class="shitiTrip">
+                  <span class="icon_index_login_me inline-block icon-anysis"></span>
+                  <span class="shitiLevel">试题解析：</span>
+                </div>
+                <div class="shitiText lh2">
+
+                  <p>参考答案 B。自组织团队的理念，出现问题时首先邀请团队提供建议。</p>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="section-container-spacer" value="B" style="display: none;">
+            <div class="text-center">
+              <h5>问题 5</h5>
+            </div>
+            <p>
+            <p>&nbsp;When one new team member is invited to take part in on Delphi Plan Conference and<br>the agile team
+              leader notices that the member is not familiar with the process, how should<br>the leader do?<br>A.
+              Require that the team member should take part in Delphi meeting frequently to obtain<br>experience<br>B.
+              Set up a plan and train team members the agile tools and approaches<br>C. Set up one project vocabulary
+              dictionary, and deliver to all team members<br>D. In the face-to-face Delphi meeting, encourage new team
+              members to raise questions<br>一名新团队成员应邀参加一次德尔菲计划会议，敏捷团队领导（the agile team
+              leader）注<br>意到该成员对这个过程并不熟悉，敏捷团队领导应该怎么做？<br><br></p>
+            </p>
+            <div class="answerWrap row answerRow" data-answer-length="1">
+              <!-- 多选题或者不定项 -->
+
+              <!-- 单选题或者判断题 -->
+
+              <div class="answerList mgb20">
+                <div class="answerTitle">
+                  <small>问题1选项</small>
+                </div>
+                <div class="answerContent aw0" data-answer-i="0">
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0A" onchange="chooseSubmit(this)" type="radio"
+                        name="5" value="A"></span>
+                    <label for="slec0A">
+                      A.要求该团队成员频繁参加德尔菲会议，以便获得经验
+
+                    </label>
+                  </div>
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0B" onchange="chooseSubmit(this)" type="radio"
+                        name="5" value="B"></span>
+                    <label for="slec0B">
+                      B.创建一份计划，为团队成员培训敏捷工具和方法
+
+                    </label>
+                  </div>
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0C" onchange="chooseSubmit(this)" type="radio"
+                        name="5" value="C"></span>
+                    <label for="slec0C">
+                      C.创建一个项目词汇字典，并发给所有团队成员
+
+                    </label>
+                  </div>
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0D" onchange="chooseSubmit(this)" type="radio"
+                        name="5" value="D"></span>
+                    <label for="slec0D">
+                      D.在面对面的德尔菲会议中，鼓励新的团队成员提问题。
+
+                    </label>
+                  </div>
+
+                </div>
+              </div>
+
+
+            </div>
+            <button type="button" onclick="lastQuestion(this)" class="btn btn-secondary">上一题</button>
+            <button type="button" onclick="answerQuestion(this)" class="btn btn-primary">答案及解析</button>
+            <button type="button" onclick="nextQuestion(this)" class="btn btn-secondary">下一题</button>
+
+            <div class="analysisAnswer none" style="display: none;">
+
+              <div class="answerEnd">
+                <span>参考答案：
+
+
+
+                  B&nbsp;
+
+
+
+
+                </span>
+              </div>
+              <div class="shitiDesp pdt15">
+                <div class="shitiTrip">
+                  <span class="icon_index_login_me inline-block icon-anysis"></span>
+                  <span class="shitiLevel">试题解析：</span>
+                </div>
+                <div class="shitiText lh2">
+
+                  <p>A 看起来没不对的地方，但作为敏捷教练，敏捷团队领导，应该及时给团队成员提<br>供帮助，为团队成员培训这些敏捷工具和方法。C 选项的词典，只会告诉德尔菲的意思，也<br>没必要发给所有的成员。
+                  </p>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="section-container-spacer" value="B" style="display: none;">
+            <div class="text-center">
+              <h5>问题 6</h5>
+            </div>
+            <p>
+            <p>a disagreement between two team members has negatively impacted team velocity on multiple projects，what
+              should an agile team lead do<br>A、encourage the team members to keep their disagreement private and ensure
+              they maintain professionalism<br>B、work within the project's self-orgnizing framework by allowing them to
+              reach a resluation their own<br>C、join the discussion and make a decision for the team<br>D、escalate the
+              situation to upper management<br>两名团队成员之间的分歧对多个项目的团队速度产生了负面影响，敏捷团队领导 应该怎么做<br><br></p>
+            </p>
+            <div class="answerWrap row answerRow" data-answer-length="1">
+              <!-- 多选题或者不定项 -->
+
+              <!-- 单选题或者判断题 -->
+
+              <div class="answerList mgb20">
+                <div class="answerTitle">
+                  <small>问题1选项</small>
+                </div>
+                <div class="answerContent aw0" data-answer-i="0">
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0A" onchange="chooseSubmit(this)" type="radio"
+                        name="6" value="A"></span>
+                    <label for="slec0A">
+                      A.鼓励团队成员私下保持分歧，并确保他们保持专业精神
+
+                    </label>
+                  </div>
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0B" onchange="chooseSubmit(this)" type="radio"
+                        name="6" value="B"></span>
+                    <label for="slec0B">
+                      B.通过允许他们自己达成解决方案，在项目的自组织框架内工作
+
+                    </label>
+                  </div>
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0C" onchange="chooseSubmit(this)" type="radio"
+                        name="6" value="C"></span>
+                    <label for="slec0C">
+                      C.加入讨论，并为团队做出决策
+
+                    </label>
+                  </div>
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0D" onchange="chooseSubmit(this)" type="radio"
+                        name="6" value="D"></span>
+                    <label for="slec0D">
+                      D.将这种情况上报给上级管理层
+
+                    </label>
+                  </div>
+
+                </div>
+              </div>
+
+
+            </div>
+            <button type="button" onclick="lastQuestion(this)" class="btn btn-secondary">上一题</button>
+            <button type="button" onclick="answerQuestion(this)" class="btn btn-primary">答案及解析</button>
+            <button type="button" onclick="nextQuestion(this)" class="btn btn-secondary">下一题</button>
+
+            <div class="analysisAnswer none" style="display: none;">
+
+              <div class="answerEnd">
+                <span>参考答案：
+
+
+
+                  B&nbsp;
+
+
+
+
+                </span>
+              </div>
+              <div class="shitiDesp pdt15">
+                <div class="shitiTrip">
+                  <span class="icon_index_login_me inline-block icon-anysis"></span>
+                  <span class="shitiLevel">试题解析：</span>
+                </div>
+                <div class="shitiText lh2">
+
+                  <p>团队是自组织的团队，相互协作。A，保持分歧，没有解决问题。C, 不是领导作出决策，应该是<br>团队作出决策。D，自组织的团队不会上报给上级管理层</p>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="section-container-spacer" value="D" style="display: none;">
+            <div class="text-center">
+              <h5>问题 7</h5>
+            </div>
+            <p>
+            <p>Gina’s agile team is beginning a large, complex project estimated to last for three years. Her team has
+              decided to only plan in detail for the next few iterations and keep iterations further removed at only a
+              high-level of detail. What type of planning technique<br>is Gina’s team using?<br>A. Progressive wave
+              planning<br>B. Release planning<br>C. Progressive elaboration<br>D. Rolling wave planning<br>Gina
+              的敏捷团队开启了一项大型，复杂的项目，估计会持续三年。她的团队决定只详细计划接下来的几次迭代，同时在远一些的迭代上只做较高层级的计划。团队正在进行哪一类型的计划技能？<br><br></p>
+            </p>
+            <div class="answerWrap row answerRow" data-answer-length="1">
+              <!-- 多选题或者不定项 -->
+
+              <!-- 单选题或者判断题 -->
+
+              <div class="answerList mgb20">
+                <div class="answerTitle">
+                  <small>问题1选项</small>
+                </div>
+                <div class="answerContent aw0" data-answer-i="0">
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0A" onchange="chooseSubmit(this)" type="radio"
+                        name="7" value="A"></span>
+                    <label for="slec0A">
+                      A.行进波计划
+
+                    </label>
+                  </div>
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0B" onchange="chooseSubmit(this)" type="radio"
+                        name="7" value="B"></span>
+                    <label for="slec0B">
+                      B.发布计划
+
+                    </label>
+                  </div>
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0C" onchange="chooseSubmit(this)" type="radio"
+                        name="7" value="C"></span>
+                    <label for="slec0C">
+                      C.逐步完善
+
+                    </label>
+                  </div>
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0D" onchange="chooseSubmit(this)" type="radio"
+                        name="7" value="D"></span>
+                    <label for="slec0D">
+                      D.滚动计划
+
+                    </label>
+                  </div>
+
+                </div>
+              </div>
+
+
+            </div>
+            <button type="button" onclick="lastQuestion(this)" class="btn btn-secondary">上一题</button>
+            <button type="button" onclick="answerQuestion(this)" class="btn btn-primary">答案及解析</button>
+            <button type="button" onclick="nextQuestion(this)" class="btn btn-secondary">下一题</button>
+
+            <div class="analysisAnswer none" style="display: none;">
+
+              <div class="answerEnd">
+                <span>参考答案：
+
+
+
+                  D&nbsp;
+
+
+
+
+                </span>
+              </div>
+              <div class="shitiDesp pdt15">
+                <div class="shitiTrip">
+                  <span class="icon_index_login_me inline-block icon-anysis"></span>
+                  <span class="shitiLevel">试题解析：</span>
+                </div>
+                <div class="shitiText lh2">
+
+                  <p>滚动计划（或计划前滚动 rolling look ahead
+                    planning）包括部分波动性和阶段性的计划，尤其是在大型复杂的项目中作用明显。只有未来几个迭代会作细节计划，而时间较遥远的迭代则只作高层次计划。逐步完善则假定细节和需求会逐步得到改良，并且会适时融入到计划流程中。
+                  </p>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="section-container-spacer" value="B" style="display: none;">
+            <div class="text-center">
+              <h5>问题 8</h5>
+            </div>
+            <p>
+            <p>&nbsp;The Project Management Office in an organization that has adopted Agile, regularly issues<br>best
+              practices and records performance data. They have just published a comparison of velocity<br>data (story
+              points completed per iteration) from different teams. As a ScrumMaster for one of the<br>teams, what would
+              be your next steps?<br>A.Share this data with the team and discuss with them how to improve its numbers in
+              relation to<br>the rest of the organization<br>B.Write back to the PMO stating that velocities should not
+              be compared across teams<br>C.Write to the management justifying the difference between the organizational
+              benchmark and<br>the figures for your team<br>D.As the team is self-organizing, simply share the data with
+              them and let them figure out what
+              to<br>do<br>采取敏捷方法的项目管理办公室定期发布最佳实践和绩效数据记录。他们刚刚发布了一份对速度<br>数据（每次迭代所完成的故事点）在不同团队中的比较。作为其中一个团队的scrum
+              master，你<br>下一步该做什么？<br></p>
+            </p>
+            <div class="answerWrap row answerRow" data-answer-length="1">
+              <!-- 多选题或者不定项 -->
+
+              <!-- 单选题或者判断题 -->
+
+              <div class="answerList mgb20">
+                <div class="answerTitle">
+                  <small>问题1选项</small>
+                </div>
+                <div class="answerContent aw0" data-answer-i="0">
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0A" onchange="chooseSubmit(this)" type="radio"
+                        name="8" value="A"></span>
+                    <label for="slec0A">
+                      A.与团队共享此数据并讨论相对于其他团队的数据进行改善
+
+                    </label>
+                  </div>
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0B" onchange="chooseSubmit(this)" type="radio"
+                        name="8" value="B"></span>
+                    <label for="slec0B">
+                      B.给项目管理里办公室写信，强调速度不应该跨组比较
+
+                    </label>
+                  </div>
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0C" onchange="chooseSubmit(this)" type="radio"
+                        name="8" value="C"></span>
+                    <label for="slec0C">
+                      C.写信给管理层，证明组织标杆和自身团队之间的差异
+
+                    </label>
+                  </div>
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0D" onchange="chooseSubmit(this)" type="radio"
+                        name="8" value="D"></span>
+                    <label for="slec0D">
+                      D.因为团队是自我组织的，因此和团队分享数据并让他们决定如何做就好
+
+                    </label>
+                  </div>
+
+                </div>
+              </div>
+
+
+            </div>
+            <button type="button" onclick="lastQuestion(this)" class="btn btn-secondary">上一题</button>
+            <button type="button" onclick="answerQuestion(this)" class="btn btn-primary">答案及解析</button>
+            <button type="button" onclick="nextQuestion(this)" class="btn btn-secondary">下一题</button>
+
+            <div class="analysisAnswer none" style="display: none;">
+
+              <div class="answerEnd">
+                <span>参考答案：
+
+
+
+                  B&nbsp;
+
+
+
+
+                </span>
+              </div>
+              <div class="shitiDesp pdt15">
+                <div class="shitiTrip">
+                  <span class="icon_index_login_me inline-block icon-anysis"></span>
+                  <span class="shitiLevel">试题解析：</span>
+                </div>
+                <div class="shitiText lh2">
+
+                  <p>"Comparison of productivity data across teams is useless because each team would<br>have different
+                    circumstances and also different basis for capturing story points. This practice is<br>not healthy
+                    hence it must be pushed back to the
+                    PMO.<br>跨团队的生产数据比较是无用的，因为每个团队有不同的情况，对故事点也有不同的基点。<br>这个做法不正确因此必须向项目管理组织反映</p>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="section-container-spacer" value="D" style="display: none;">
+            <div class="text-center">
+              <h5>问题 9</h5>
+            </div>
+            <p>
+            <p>How is risk severity, as used in a risk burndown chart, typically calculated?<br>A. Severity =impact
+              *planned cost<br>B. Severity =impact * planned value<br>C. Severity =impact * actual cost<br>D. Severity
+              =impact * probability/likelihood<br>风险严重度在风险燃尽图中通常怎样计算？<br><br></p>
+            </p>
+            <div class="answerWrap row answerRow" data-answer-length="1">
+              <!-- 多选题或者不定项 -->
+
+              <!-- 单选题或者判断题 -->
+
+              <div class="answerList mgb20">
+                <div class="answerTitle">
+                  <small>问题1选项</small>
+                </div>
+                <div class="answerContent aw0" data-answer-i="0">
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0A" onchange="chooseSubmit(this)" type="radio"
+                        name="9" value="A"></span>
+                    <label for="slec0A">
+                      A.严重度＝影响×计划成本
+
+                    </label>
+                  </div>
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0B" onchange="chooseSubmit(this)" type="radio"
+                        name="9" value="B"></span>
+                    <label for="slec0B">
+                      B.严重度=影响×计划价值
+
+                    </label>
+                  </div>
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0C" onchange="chooseSubmit(this)" type="radio"
+                        name="9" value="C"></span>
+                    <label for="slec0C">
+                      C.严重度=影响×实际成本
+
+                    </label>
+                  </div>
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0D" onchange="chooseSubmit(this)" type="radio"
+                        name="9" value="D"></span>
+                    <label for="slec0D">
+                      D.严重度=影响×概率/可能性
+
+                    </label>
+                  </div>
+
+                </div>
+              </div>
+
+
+            </div>
+            <button type="button" onclick="lastQuestion(this)" class="btn btn-secondary">上一题</button>
+            <button type="button" onclick="answerQuestion(this)" class="btn btn-primary">答案及解析</button>
+            <button type="button" onclick="nextQuestion(this)" class="btn btn-secondary">下一题</button>
+
+            <div class="analysisAnswer none" style="display: none;">
+
+              <div class="answerEnd">
+                <span>参考答案：
+
+
+
+                  D&nbsp;
+
+
+
+
+                </span>
+              </div>
+              <div class="shitiDesp pdt15">
+                <div class="shitiTrip">
+                  <span class="icon_index_login_me inline-block icon-anysis"></span>
+                  <span class="shitiLevel">试题解析：</span>
+                </div>
+                <div class="shitiText lh2">
+
+                  <p>
+                    风险燃尽图是用于跟踪项目伴随时间风险的风险管理技能。通过风险燃尽图，干系人可迅速查看随着时间项目风险管理的绩效（比如提高，降低以及对应的量值）。<br>严重度（影响和收益的产品）是沿着竖轴绘制，而横轴是时间。<br>影响力的量值往往是
+                    0-5，按风险升序排列。<br>收益率/可能性的量值往往是 0-5，按收益率升序排列。<br>例如，一项风险的最高风险度是 25（5*5=25），最低风险度是
+                    0。<br>敏捷团队和客户/产品负责人识别到风险同时分配严重度值到风险登记册，并跟踪这些值。理想情况下，风险严重度会随着时间降低。</p>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="section-container-spacer" value="C" style="display: none;">
+            <div class="text-center">
+              <h5>问题 10</h5>
+            </div>
+            <p>
+            <p>Andy and his team are in the middle of iteration planning. The team has identified from one user story
+              eight required tasks. Approximately how long should each task take to develop or execute?<br>A. Exactly
+              one hour<br>B. Less than two hours<br>C. Between four hours and two days<br>D. Five business
+              days<br>安迪和他的团队正进行到迭代计划，他们从一个用户故事中识别出 8 个任务，那么每一项任务开发或者执行所需时长大约是<br><br></p>
+            </p>
+              <div class="answerWrap row answerRow" data-answer-length="1">
+              <!-- 多选题或者不定项 -->
+
+              <!-- 单选题或者判断题 -->
+
+              <div class="answerList mgb20">
+                <div class="answerTitle">
+                  <small>问题选项</small>
+                </div>
+                <div class="answerContent aw0" data-answer-i="0">
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0A" onchange="chooseSubmit(this)" type="radio"
+                        name="10" value="A"></span>
+                    <label for="slec0A">
+                      A.一小时整
+
+                    </label>
+                  </div>
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0B" onchange="chooseSubmit(this)" type="radio"
+                        name="10" value="B"></span>
+                    <label for="slec0B">
+                      B.少于两小时
+
+                    </label>
+                  </div>
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0C" onchange="chooseSubmit(this)" type="radio"
+                        name="10" value="C"></span>
+                    <label for="slec0C">
+                      C.四小时到两天之间
+
+                    </label>
+                  </div>
+
+                  <div class="answerContentList mgt10">
+                    <span class="cbox"><input class="answerInpt" id="slec0D" onchange="chooseSubmit(this)" type="radio"
+                        name="10" value="D"></span>
+                    <label for="slec0D">
+                      D.五个工作日
+
+                    </label>
+                  </div>
+
+                </div>
+              </div>
+
+
+            </div>
+            <button type="button" onclick="lastQuestion(this)" class="btn btn-secondary">上一题</button>
+            <button type="button" onclick="answerQuestion(this)" class="btn btn-primary">答案及解析</button>
+            <button type="button" onclick="nextQuestion(this)" class="btn btn-secondary">下一题</button>
+
+            <div class="analysisAnswer none" style="display: none;">
+
+              <div class="answerEnd">
+                <span>参考答案：
+
+
+
+                  C&nbsp;
+
+
+
+
+                </span>
+              </div>
+              <div class="shitiDesp pdt15">
+                <div class="shitiTrip">
+                  <span class="icon_index_login_me inline-block icon-anysis"></span>
+                  <span class="shitiLevel">试题解析：</span>
+                </div>
+                <div class="shitiText lh2">
+
+                  <p>
+                    用户故事或者特性首先在发布计划期间被分配到迭代中。如果用户故事是特性，那么在迭代计划期间会被分解成若干任务，这样任务可再分配给特定的开发者。为便于管理计划和监控，估算任务持续时长的一条经验是每一项任务的应大约占开发时长的四小时到两天。
+                  </p>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <footer>
+    <div class="section-container footer-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h4>关于我们</h4>
+            <p>华昱致力于利用先进技术将优质的技能课程以低成本的方式带给职场人士，帮助专业人员快速成长。</p>
+          </div>
+
+          <div class="col-md-4">
+            <h4>可以通过以下方式找到我们 !</h4>
+            <p>
+              微信公众号：华昱PMP
+            </p>
+            <p>
+              微信号：hazycom
+            </p>
+            <p><small>2020 © 华昱教育 <a href="http://www.mashup-template.com/" class="link-like-text"
+                  title="Create website with free html template"></a><a href="http://www.unsplash.com/"
+                  class="link-like-text" title="Beautiful Free Images"></a></small></p>
+          </div>
+
+          <div class="col-md-4">
+            <h4></h4>
+
+
+
+
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
-</header>
+  </footer>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      navActivePage();
+    });
+  </script>
 
-
-
-<div class="section-container">
-    <div class="container">
-    
-        <div class="row">
-            <div class="col-xs-12 col-md-8 col-md-offset-2">
-                <div class="section-container-spacer" value="A" >
-                    <div class="text-center">
-                        <h1>问题 1</h1>
-                    </div>
-                    <p>
-                      <p>What is the process called when a person performs a self-assessment to understand how he or she may improve performance?<br>A. Returning<br>B. Reimaging<br>C. Refactoring<br>D. Reflection<br>为了了解自己提高绩效的方式，进行自我评估，这一过程称为<br><br></p>
-                    </p>
-
-                    <div class="answerWrap row answerRow" data-answer-length="1">
-                            <!-- 多选题或者不定项 -->
-                                <!-- 单选题或者判断题 -->
-                                <div class="answerList mgb20">
-                                    <div class="answerTitle">
-                                        <small>问题1选项</small>
-                                    </div>
-                                    <div class="answerContent aw0" data-answer-i="0">
-                                        
-                                        <div class="answerContentList mgt10">
-                                            <span class="cbox"><input class="answerInpt" id="slec0A" onchange="chooseSubmit(this)" type="radio" name="1" value="A"></span>
-                                            <label for="slec0A">
-                                                A.回归 
-                                               
-                                            </label>
-                                        </div>
-                                        
-                                        <div class="answerContentList mgt10">
-                                            <span class="cbox"><input class="answerInpt" id="slec0B" onchange="chooseSubmit(this)" type="radio" name="1" value="B"></span>
-                                            <label for="slec0B">
-                                                B.重新印象 
-                                               
-                                            </label>
-                                        </div>
-                                        
-                                        <div class="answerContentList mgt10">
-                                            <span class="cbox"><input class="answerInpt" id="slec0C" onchange="chooseSubmit(this)" type="radio" name="1" value="C"></span>
-                                            <label for="slec0C">
-                                                C.重构 
-                                               
-                                            </label>
-                                        </div>
-                                        
-                                        <div class="answerContentList mgt10">
-                                            <span class="cbox"><input class="answerInpt" id="slec0D" onchange="chooseSubmit(this)" type="radio" name="1" value="D"></span>
-                                            <label for="slec0D">
-                                                D.反思 
-                                               
-                                            </label>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                                
-                            
-                        </div>
-                        <button type="button" onclick="lastQuestion(this)" class="btn btn-secondary">上一题</button>
-                        <button type="button" onclick="answerQuestion(this)" class="btn btn-primary">答案及解析</button>
-                        <button type="button" onclick="nextQuestion(this)" class="btn btn-secondary">下一题</button>
-                        <div class="analysisAnswer none" style="display: none;">
-
-                          <div class="answerEnd">
-                            <span>参考答案：
-
-
-
-                              D&nbsp;
-
-
-
-
-                            </span>
-                          </div>
-                          <div class="shitiDesp pdt15">
-                            <div class="shitiTrip">
-                              <span class="icon_index_login_me inline-block icon-anysis"></span>
-                              <span class="shitiLevel">试题解析：</span>
-                            </div>
-                            <div class="shitiText lh2">
-
-                              <p>在反思和回顾期间，以持续改进为目标，敏捷团队保留时间对已完成工作进行反思。<br>在此自我评估/团队评估中，包含的内容有：<br>从成功或失误中汲取的教训<br>已执行或失败或未彻底遵循的团队标准<br>其他可改进的地方。</p>
-
-                            </div>
-                          </div>
-                          
-                        </div>
-                      </div>
-
-                <div class="section-container-spacer" value="B" style="display: none;">
-                    <div class="text-center">
-                        <h1>问题 2</h1>
-                    </div>
-                    <p>
-                      <p>What is the process called when a person performs a self-assessment to understand how he or she may improve performance?<br>A. Returning<br>B. Reimaging<br>C. Refactoring<br>D. Reflection<br>为了了解自己提高绩效的方式，进行自我评估，这一过程称为<br><br></p>
-                    </p>
-
-                    <div class="answerWrap row answerRow" data-answer-length="1">
-                            <!-- 多选题或者不定项 -->
-                                <!-- 单选题或者判断题 -->
-                                <div class="answerList mgb20">
-                                    <div class="answerTitle">
-                                        <small>问题2选项</small>
-                                    </div>
-                                    <div class="answerContent aw0" data-answer-i="0">
-                                        
-                                        <div class="answerContentList mgt10">
-                                            <span class="cbox"><input class="answerInpt" id="slec0A" onchange="chooseSubmit(this)" type="radio" name="2" value="A"></span>
-                                            <label for="slec0A">
-                                                A.回归 
-                                               
-                                            </label>
-                                        </div>
-                                        
-                                        <div class="answerContentList mgt10">
-                                            <span class="cbox"><input class="answerInpt" id="slec0B" onchange="chooseSubmit(this)" type="radio" name="2" value="B"></span>
-                                            <label for="slec0B">
-                                                B.重新印象 
-                                               
-                                            </label>
-                                        </div>
-                                        
-                                        <div class="answerContentList mgt10">
-                                            <span class="cbox"><input class="answerInpt" id="slec0C" onchange="chooseSubmit(this)" type="radio" name="2" value="C"></span>
-                                            <label for="slec0C">
-                                                C.重构 
-                                               
-                                            </label>
-                                        </div>
-                                        
-                                        <div class="answerContentList mgt10">
-                                            <span class="cbox"><input class="answerInpt" id="slec0D" onchange="chooseSubmit(this)" type="radio" name="2" value="D"></span>
-                                            <label for="slec0D">
-                                                D.反思 
-                                               
-                                            </label>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                                
-                            
-                        </div>
-                           <button type="button" onclick="lastQuestion(this)" class="btn btn-secondary">上一题</button>
-                        <button type="button" onclick="answerQuestion(this)" class="btn btn-primary">答案及解析</button>
-                        <button type="button" onclick="nextQuestion(this)" class="btn btn-secondary">下一题</button>
-
-                        <div class="analysisAnswer none"  hidden="true">
-
-                            <div class="answerEnd">
-                                <span>参考答案：
-                                  
-                                  
-                                      
-                                          D&nbsp;
-                                      
-                                      
-                                  
-                                  
-                                </span>
-                            </div>
-                            <div class="shitiDesp pdt15">
-                                <div class="shitiTrip">
-                                    <span class="icon_index_login_me inline-block icon-anysis"></span>
-                                    <span class="shitiLevel">试题解析：</span>
-                                </div>
-                                <div class="shitiText lh2">
-                                  
-                                  <p>在反思和回顾期间，以持续改进为目标，敏捷团队保留时间对已完成工作进行反思。<br>在此自我评估/团队评估中，包含的内容有：<br>从成功或失误中汲取的教训<br>已执行或失败或未彻底遵循的团队标准<br>其他可改进的地方。</p>
-                                  
-                                </div>
-                            </div>
-                          
-                        </div>
-                </div>
-
-                 <div class="section-container-spacer" value="C"  hidden="true">
-                    <div class="text-center">
-                        <h1>问题 3</h1>
-                    </div>
-                    <p>
-                      <p>What is the process called when a person performs a self-assessment to understand how he or she may improve performance?<br>A. Returning<br>B. Reimaging<br>C. Refactoring<br>D. Reflection<br>为了了解自己提高绩效的方式，进行自我评估，这一过程称为<br><br></p>
-                    </p>
-
-                    <div class="answerWrap row answerRow" data-answer-length="1">
-                            <!-- 多选题或者不定项 -->
-                                <!-- 单选题或者判断题 -->
-                                <div class="answerList mgb20">
-                                    <div class="answerTitle">
-                                        <small>问题1选项</small>
-                                    </div>
-                                    <div class="answerContent aw0" data-answer-i="0">
-                                        
-                                        <div class="answerContentList mgt10">
-                                            <span class="cbox"><input class="answerInpt" id="slec0A" onchange="chooseSubmit(this)" type="radio" name="3" value="A"></span>
-                                            <label for="slec0A">
-                                                A.回归 
-                                               
-                                            </label>
-                                        </div>
-                                        
-                                        <div class="answerContentList mgt10">
-                                            <span class="cbox"><input class="answerInpt" id="slec0B" onchange="chooseSubmit(this)" type="radio" name="3" value="B"></span>
-                                            <label for="slec0B">
-                                                B.重新印象 
-                                               
-                                            </label>
-                                        </div>
-                                        
-                                        <div class="answerContentList mgt10">
-                                            <span class="cbox"><input class="answerInpt" id="slec0C" onchange="chooseSubmit(this)" type="radio" name="3" value="C"></span>
-                                            <label for="slec0C">
-                                                C.重构 
-                                               
-                                            </label>
-                                        </div>
-                                        
-                                        <div class="answerContentList mgt10">
-                                            <span class="cbox"><input class="answerInpt" id="slec0D" onchange="chooseSubmit(this)" type="radio" name="3" value="D"></span>
-                                            <label for="slec0D">
-                                                D.反思 
-                                               
-                                            </label>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                                
-                            
-                        </div>
-                           <button type="button" onclick="lastQuestion(this)" class="btn btn-secondary">上一题</button>
-                        <button type="button" onclick="answerQuestion(this)" class="btn btn-primary">答案及解析</button>
-                        <button type="button" onclick="nextQuestion(this)" class="btn btn-secondary">下一题</button>
-
-                        <div class="analysisAnswer none"  hidden="true">
-
-                            <div class="answerEnd">
-                                <span>参考答案：
-                                  
-                                  
-                                      
-                                          D&nbsp;
-                                      
-                                      
-                                  
-                                  
-                                </span>
-                            </div>
-                            <div class="shitiDesp pdt15">
-                                <div class="shitiTrip">
-                                    <span class="icon_index_login_me inline-block icon-anysis"></span>
-                                    <span class="shitiLevel">试题解析：</span>
-                                </div>
-                                <div class="shitiText lh2">
-                                  
-                                  <p>在反思和回顾期间，以持续改进为目标，敏捷团队保留时间对已完成工作进行反思。<br>在此自我评估/团队评估中，包含的内容有：<br>从成功或失误中汲取的教训<br>已执行或失败或未彻底遵循的团队标准<br>其他可改进的地方。</p>
-                                  
-                                </div>
-                            </div>
-                          
-                        </div>
-                </div>
-            </div>
-        </div>
-
-       
-    </div>
-</div>           
-
-
-<div class="section-container">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-
-                <button type="button" onclick="getResult(this)" class="btn btn-secondary">
-                  查看结果
-                </button>
-
-                <p class="result"></p>
-
-                
-
-</div>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-<footer>
-    <div class="section-container footer-container">
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-4">
-                        <h4>About us</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet consectetur dolor</p>
-                    </div>
-
-                    <div class="col-md-4">
-                        <h4>Do you like ? Share this !</h4>
-                        <p>
-                            <a href="https://facebook.com/" class="social-round-icon white-round-icon fa-icon" title="">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                          </a>
-                          <a href="https://twitter.com/" class="social-round-icon white-round-icon fa-icon" title="">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                          </a>
-                          <a href="https://www.linkedin.com/" class="social-round-icon white-round-icon fa-icon" title="">
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                          </a>
-                        </p>
-                        <p><small>© Untitled | Website created with <a href="http://www.mashup-template.com/" class="link-like-text" title="Create website with free html template">Mashup Template</a>/<a href="http://www.unsplash.com/" class="link-like-text" title="Beautiful Free Images">Unsplash</a></small></p>    
-                    </div>
-
-                    <div class="col-md-4">
-                        <h4>Subscribe to newsletter</h4>
-                        
-                        <div class="form-group">
-                            <div class="input-group">
-                                <input type="text" class="form-control footer-input-text">
-                                <div class="input-group-btn">
-                                    <button type="button" class="btn btn-primary btn-newsletter ">OK</button>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function (event) {
-    navActivePage();
-  });
-</script>
-
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
 
 <script>
   (function (i, s, o, g, r, a, m) {
@@ -418,13 +1112,13 @@
   ga('send', 'pageview');
 </script>
 
---> 
-<script type="text/javascript" src="./main.41beeca9.js">
+-->
+  <script type="text/javascript" src="./main.41beeca9.js">
 
-</script>
-<script type="text/javascript" src="./question.js">
+  </script>
+  <script type="text/javascript" src="./question.js">
 
-</script>
+  </script>
 </body>
 
 </html>

@@ -36,7 +36,7 @@ function getResult(obj){
 	score = amount/questions.length;
 	score = (score.toFixed(2))*100;
 	var result = document.getElementsByClassName("result");
-	result[0].innerText = "得分："+score+"%";
+	result[0].innerText = "你的得分："+score+"%";
 	console.log("得分："+score+"%");
 }
 
